@@ -1,0 +1,22 @@
+# Secrets
+.env
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Playwright MCP runtime
+.playwright-mcp/
+
+# Test screenshots
+*.png

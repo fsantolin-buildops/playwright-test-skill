@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh *)",
+      "Bash(cat .env*)",
+      "Bash(cat /Users/fsantolin/Projects/playwright-test-skill/.env*)",
+      "Bash(grep *)",
+      "Read(/Users/fsantolin/Projects/playwright-test-skill/.env)",
+      "mcp__playwright__*"
+    ],
+    "deny": []
+  }
+}
