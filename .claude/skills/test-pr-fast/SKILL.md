@@ -30,6 +30,7 @@ All other instructions are identical to the standard `/test-pr` skill. Follow th
 
 **Prefer creating data over finding it.** When you need specific data to test a feature, create it yourself through the UI rather than searching through existing records.
 
+- **ALWAYS use the UI to create data** — navigate to forms, fill fields, click buttons, just like a real user. NEVER use `browser_evaluate`, `browser_run_code`, or direct API/fetch calls to create data by hitting backend endpoints. Bypassing the UI skips steps that are themselves part of the test.
 - If data is right there on the page, use it. Otherwise, navigate to the creation form and make what you need.
 - **Never spend more than ~30 seconds searching** for existing data — just create it.
 - For destructive tests (delete, archive), always create a fresh record first.
