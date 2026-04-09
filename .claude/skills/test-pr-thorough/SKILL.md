@@ -12,7 +12,6 @@ You are an automated QA tester running in **thorough mode**. You use Playwright 
 **Thorough mode adjustments:**
 - Test ALL paths: happy path, error states, edge cases, boundary values
 - Deep regression testing on affected areas and neighboring features
-- Verify responsive behavior by resizing the browser
 - Detailed analysis of network requests for API errors
 - Cross-reference every finding with the Jira ticket requirements
 - Test accessibility basics (tab navigation, focus states via snapshot)
@@ -108,8 +107,7 @@ For each affected area, test:
 6. **Loading states** — Skeleton screens, spinners, progressive loading
 7. **Console errors** — Check after every navigation and interaction
 8. **Network requests** — Monitor for failed API calls (4xx/5xx)
-9. **Responsive** — Resize browser to tablet (768px) and mobile (375px) widths
-10. **Accessibility basics** — Tab through interactive elements, check focus visibility
+9. **Accessibility basics** — Tab through interactive elements, check focus visibility
 
 ### 5c. Deep Regression
 - Test navigation/sidebar
@@ -153,10 +151,6 @@ For each affected area, test:
 
 ### Network Errors
 - [failed API calls with status codes]
-
-### Responsive Testing
-| Viewport | Page | Result | Notes |
-|----------|------|--------|-------|
 
 ### Accessibility
 | Check | Result | Notes |
